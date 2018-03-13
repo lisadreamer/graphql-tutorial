@@ -17,5 +17,19 @@ localhost:4000/graphiql
 
 run:
 {
-  author
+  authors
 }
+
+{
+  authors {
+    name
+    age
+    books
+  }
+}
+
+author(id:12) {
+    name
+    age
+    books
+  }
