@@ -2,6 +2,7 @@
 
 GraphQL basics
 ================================
+needs mongodb
 
 Installation
 ------------
@@ -16,20 +17,11 @@ Use
 localhost:4000/graphiql
 
 run:
-{
-  authors
-}
 
-{
-  authors {
+mutation{
+  addAuthor(name: "Stephen King", age: 55, books: ["abc","def"]) {
     name
     age
     books
   }
 }
-
-author(id:12) {
-    name
-    age
-    books
-  }
